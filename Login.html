@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HorizonGO Login</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <header>
+            <p class="login-number">HorizonGo</p>
+            <h1>Have an account?</h1>
+        </header>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            
+            <div class="input-group password-group">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class="far fa-eye" id="togglePassword"></i>
+            </div>
+
+            <p id="error-msg"></p>
+
+            <a href="travel.html" id="signInLink" style="text-decoration: none;">
+                <button type="button" class="sign-in-btn">SIGN IN</button>
+            </a>
+
+            <p class="password-hint">
+                Note: Use 8 characters with a symbol, number, and uppercase.
+            </p>
+
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox" checked> Remember Me
+                </label>
+                <a href="#" class="forgot-password">Forgot Password</a>
+            </div>
+        </form>
+
+        <div class="separator">
+            <span>— Or Sign In With —</span>
+        </div>
+
+        <div class="social-login">
+            <button type="button" class="social-btn">Facebook</button>
+            <button type="button" class="social-btn">Twitter</button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
